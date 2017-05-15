@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/bank-ocr/bank-ocr.iml" filepath="$PROJECT_DIR$/bank-ocr/bank-ocr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example/example.iml" filepath="$PROJECT_DIR$/example/example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example-cucumber/example-cucumber.iml" filepath="$PROJECT_DIR$/example-cucumber/example-cucumber.iml" />
+      <module fileurl="file://$PROJECT_DIR$/game-of-life/game-of-life.iml" filepath="$PROJECT_DIR$/game-of-life/game-of-life.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gilded-rose/gilded-rose.iml" filepath="$PROJECT_DIR$/gilded-rose/gilded-rose.iml" />
+      <module fileurl="file://$PROJECT_DIR$/greeting/greeting.iml" filepath="$PROJECT_DIR$/greeting/greeting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/selenium/selenium.iml" filepath="$PROJECT_DIR$/selenium/selenium.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test-training.iml" filepath="$PROJECT_DIR$/test-training.iml" />
+      <module fileurl="file://$PROJECT_DIR$/unusual-spending/unusual-spending.iml" filepath="$PROJECT_DIR$/unusual-spending/unusual-spending.iml" />
+      <module fileurl="file://$PROJECT_DIR$/unusual-spending-vendor/unusual-spending-vendor.iml" filepath="$PROJECT_DIR$/unusual-spending-vendor/unusual-spending-vendor.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="bank-ocr" />
+        <module name="example" />
+        <module name="example-cucumber" />
+        <module name="game-of-life" />
+        <module name="gilded-rose" />
+        <module name="greeting" />
+        <module name="selenium" />
+        <module name="unusual-spending" />
+        <module name="unusual-spending-vendor" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="bank-ocr" target="1.5" />
+      <module name="example" target="1.5" />
+      <module name="example-cucumber" target="1.5" />
+      <module name="game-of-life" target="1.5" />
+      <module name="gilded-rose" target="1.5" />
+      <module name="greeting" target="1.5" />
+      <module name="selenium" target="1.5" />
+      <module name="test-training" target="1.5" />
+      <module name="unusual-spending" target="1.5" />
+      <module name="unusual-spending-vendor" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

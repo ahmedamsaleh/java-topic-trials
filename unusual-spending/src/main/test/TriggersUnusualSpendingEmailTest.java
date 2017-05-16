@@ -14,16 +14,16 @@ import static org.mockito.Mockito.when;
 @RunWith(MockitoJUnitRunner.class)
 public class TriggersUnusualSpendingEmailTest {
     @InjectMocks
-    TriggersUnusualSpendingEmail triggersUnusualSpendingEmail;
+    private TriggersUnusualSpendingEmail triggersUnusualSpendingEmail;
 
     @Mock
-    EmailsUserWrapper emailsUserWrapper;
+    private EmailsUserWrapper emailsUserWrapper;
 
     @Mock
-    FetchesUserPaymentsByMonthWrapper fetchesUserPaymentsByMonthWrapper;
+    private FetchesUserPaymentsByMonthWrapper fetchesUserPaymentsByMonthWrapper;
 
     @Mock
-    Payment payment;
+    private Payment payment;
 
     @Test
     public void canaryTest() {

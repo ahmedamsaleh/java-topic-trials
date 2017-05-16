@@ -1,6 +1,5 @@
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.InjectMocks;
 import org.mockito.runners.MockitoJUnitRunner;
 import spending.Category;
 import spending.Payment;
@@ -11,8 +10,6 @@ import static org.junit.Assert.assertEquals;
 
 @RunWith(MockitoJUnitRunner.class)
 public class PaymentTest {
-    @InjectMocks
-    Payment payment;
 
     @Test
     public void createPayment(){
@@ -33,18 +30,9 @@ public class PaymentTest {
     @Test
     public void createListOfPayments(){
         //arrange
-        Payment payment1 = new Payment();
-        Payment payment2 = new Payment();
-        Payment payment3 = new Payment();
-        payment1.setDescription("example payment");
-        payment1.setCategory(Category.GOLF);
-        payment1.setPrice(100);
-        payment2.setDescription("example payment");
-        payment2.setCategory(Category.GOLF);
-        payment2.setPrice(10);
-        payment3.setDescription("example payment");
-        payment3.setCategory(Category.GOLF);
-        payment3.setPrice(1000);
+        Payment payment1 = new Payment("example payment", Category.RESTAURANT, 100);
+        Payment payment2 = new Payment("example payment", Category.GOLF, 10);
+        Payment payment3 = new Payment("example payment", Category.ENTERTAINMENT, 1000);
         ArrayList<Payment> paymentArrayList= new ArrayList<Payment>();
 
         //act
@@ -57,4 +45,33 @@ public class PaymentTest {
         assertEquals(paymentArrayList.get(0).getPrice(), 100);
     }
 
+    @Test
+    public void categorizePayments(){
+        //arrange
+        Payment payment1 = new Payment("example payment", Category.RESTAURANT, 100);
+        Payment payment2 = new Payment("example payment", Category.GOLF, 10);
+        Payment payment3 = new Payment("example payment", Category.ENTERTAINMENT, 1000);
+        Payment payment4 = new Payment("example payment", Category.RESTAURANT, 150);
+        Payment payment5 = new Payment("example payment", Category.GOLF, 10);
+        Payment payment6 = new Payment("example payment", Category.ENTERTAINMENT, 50);
+        ArrayList<Payment> currentMonthPayments = new ArrayList<Payment>();
+        ArrayList<Payment> previousMonthPayments = new ArrayList<Payment>();
+        ArrayList<Category> expectedCategories = new ArrayList<Category>();
+
+        //act
+        currentMonthPayments.add(payment1);
+        currentMonthPayments.add(payment2);
+        currentMonthPayments.add(payment3);
+        previousMonthPayments.add(payment4);
+        previousMonthPayments.add(payment5);
+        previousMonthPayments.add(payment6);
+        expectedCategories.add(Category.RESTAURANT);
+        Payment payment = new Payment();
+        ArrayList<Category> categorizedList = payment.determineCategoriesSpentMoreThisMonth(
+                currentMonthPayments, previousMonthPayments);
+
+        //assert
+        assertEquals(categorizedList, expectedCategories);
+
+    }
 }

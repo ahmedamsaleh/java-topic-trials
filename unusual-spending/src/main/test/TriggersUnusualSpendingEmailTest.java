@@ -36,7 +36,7 @@ public class TriggersUnusualSpendingEmailTest {
         long userId = 123;
         ArrayList<Payment> currentMonthPayments = new ArrayList<Payment>();
         ArrayList<Payment> previousMonthPayments = new ArrayList<Payment>();
-        ArrayList<Payment> categorizedPayments = new ArrayList<Payment>();
+        ArrayList<Category> categories = new ArrayList<Category>();
         int currentMonth = 5;
         int previousMonth = 4;
         int year = 2017;
@@ -46,8 +46,8 @@ public class TriggersUnusualSpendingEmailTest {
                 thenReturn(currentMonthPayments);
         when(fetchesUserPaymentsByMonthWrapper.fetch(userId, previousMonth, year)).
                 thenReturn(previousMonthPayments);
-        when(payment.categorize(currentMonthPayments, previousMonthPayments)).
-                thenReturn(categorizedPayments);
+        when(payment.determineCategoriesSpentMoreThisMonth(currentMonthPayments, previousMonthPayments)).
+                thenReturn(categories);
         //act
         triggersUnusualSpendingEmail.trigger(userId);
 

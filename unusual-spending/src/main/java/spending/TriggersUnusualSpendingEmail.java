@@ -14,8 +14,8 @@ public class TriggersUnusualSpendingEmail {
 				userId, cal.get(Calendar.MONTH), cal.get(Calendar.YEAR));
 		ArrayList<Payment> previousMonthPayments = fetchesUserPaymentsByMonthWrapper.fetch(
 				userId, cal.get(Calendar.MONTH) - 1, cal.get(Calendar.YEAR));
-		ArrayList<Payment> categorizedPayments =
-				payment.categorize(currentMonthPayments, previousMonthPayments);
+		ArrayList<Category> categories =
+				payment.determineCategoriesSpentMoreThisMonth(currentMonthPayments, previousMonthPayments);
 		emailsUserWrapper.email();
 	}
 

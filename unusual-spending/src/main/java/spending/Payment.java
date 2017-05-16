@@ -11,10 +11,11 @@ public class Payment {
     public Payment(){}
 
     public Payment(String description, Category category, int price){
-        this.setDescription(description);
-        this.setCategory(category);
-        this.setPrice(price);
+        this.description = description;
+        this.category = category;
+        this.price = price;
     }
+
     public int getPrice() {return price;}
 
     public void setPrice(int price) {

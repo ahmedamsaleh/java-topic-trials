@@ -46,11 +46,11 @@
       <file leaf-file-name="Payment.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/unusual-spending/src/main/java/spending/Payment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="59" column="12" lean-forward="false" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="12" />
+            <state relative-caret-position="300">
+              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1055#1065#0" expanded="true" />
+                <element signature="e#1050#1060#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -712,17 +712,11 @@
       <option name="presentableId" value="Default" />
       <updated>1494862261165</updated>
       <workItem from="1494862262477" duration="2118000" />
-      <workItem from="1494945451042" duration="5896000" />
+      <workItem from="1494945451042" duration="6627000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PaymentTest - 2017.05.16 at 12h 11m 35s.xml">
-      <configuration name="PaymentTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PaymentTest - 2017.05.16 at 12h 11m 44s.xml">
-      <configuration name="PaymentTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="PaymentTest - 2017.05.16 at 12h 11m 58s.xml">
       <configuration name="PaymentTest" configurationId="JUnit" />
     </history-entry>
@@ -747,9 +741,15 @@
     <history-entry file="PaymentTest - 2017.05.16 at 12h 15m 54s.xml">
       <configuration name="PaymentTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="PaymentTest - 2017.05.16 at 14h 27m 17s.xml">
+      <configuration name="PaymentTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PaymentTest - 2017.05.16 at 14h 27m 23s.xml">
+      <configuration name="PaymentTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8014000" />
+    <option name="totallyTimeSpent" value="8745000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
@@ -839,10 +839,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#941#950#0" expanded="true" />
-            <element signature="e#1018#1027#0" expanded="true" />
-            <element signature="e#1085#1095#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#941#950#0" expanded="false" />
+            <element signature="e#1018#1027#0" expanded="false" />
+            <element signature="e#1085#1095#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -959,10 +959,10 @@
         <state relative-caret-position="148">
           <caret line="38" column="65" lean-forward="false" selection-start-line="38" selection-start-column="65" selection-end-line="38" selection-end-column="65" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#941#950#0" expanded="true" />
-            <element signature="e#1018#1027#0" expanded="true" />
-            <element signature="e#1085#1095#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#941#950#0" expanded="false" />
+            <element signature="e#1018#1027#0" expanded="false" />
+            <element signature="e#1085#1095#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -993,11 +993,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/unusual-spending/src/main/java/spending/Payment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="59" column="12" lean-forward="false" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="12" />
+        <state relative-caret-position="300">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1055#1065#0" expanded="true" />
+            <element signature="e#1050#1060#0" expanded="true" />
           </folding>
         </state>
       </provider>

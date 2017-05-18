@@ -30,12 +30,12 @@ public class EmailMessageTest {
         ArrayList<Category> expectedCategories = new ArrayList<Category>();
 
         //act
-        currentMonthPayments.add(payment1);
-        currentMonthPayments.add(payment2);
-        currentMonthPayments.add(payment3);
-        previousMonthPayments.add(payment4);
-        previousMonthPayments.add(payment5);
-        previousMonthPayments.add(payment6);
+        previousMonthPayments.add(payment1);
+        previousMonthPayments.add(payment2);
+        previousMonthPayments.add(payment3);
+        currentMonthPayments.add(payment4);
+        currentMonthPayments.add(payment5);
+        currentMonthPayments.add(payment6);
         expectedCategories.add(Category.RESTAURANT);
         Payment payment = new Payment();
         HashMap<Category, Integer> categorizedList = payment.determineCategoriesSpentMoreThisMonth(
@@ -49,6 +49,6 @@ public class EmailMessageTest {
                     "Love,\n" +
                     "\n" +
                     "The Credit Card Company";
-            //assertEquals(expectedEmail, emailMessage.composeEmail());
+            assertEquals(expectedEmail, emailMessage.composeEmail(categorizedList));
     }
 }

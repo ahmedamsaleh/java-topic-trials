@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba77300a-dff5-478a-a8b3-760bed72f180" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unusual-spending/src/main/java/spending/Payment.java" afterPath="$PROJECT_DIR$/unusual-spending/src/main/java/spending/Payment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unusual-spending/src/main/java/spending/TriggersUnusualSpendingEmail.java" afterPath="$PROJECT_DIR$/unusual-spending/src/main/java/spending/TriggersUnusualSpendingEmail.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unusual-spending/src/main/test/PaymentTest.java" afterPath="$PROJECT_DIR$/unusual-spending/src/main/test/PaymentTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unusual-spending/src/main/test/TriggersUnusualSpendingEmailTest.java" afterPath="$PROJECT_DIR$/unusual-spending/src/main/test/TriggersUnusualSpendingEmailTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unusual-spending/src/main/java/spending/EmailMessage.java" afterPath="$PROJECT_DIR$/unusual-spending/src/main/java/spending/EmailMessage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unusual-spending/src/main/test/EmailMessageTest.java" afterPath="$PROJECT_DIR$/unusual-spending/src/main/test/EmailMessageTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/greeting/target/" />
     <ignored path="$PROJECT_DIR$/unusual-spending/target/" />
@@ -35,7 +32,7 @@
         <entry file="file://$PROJECT_DIR$/unusual-spending/src/main/test/EmailMessageTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="303">
-              <caret line="40" column="13" lean-forward="false" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+              <caret line="46" column="33" lean-forward="false" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -43,25 +40,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PaymentTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/unusual-spending/src/main/test/PaymentTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="71" column="41" lean-forward="false" selection-start-line="71" selection-start-column="41" selection-end-line="71" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EmailMessage.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="EmailMessage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/unusual-spending/src/main/java/spending/EmailMessage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="3" column="31" lean-forward="false" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-              <folding>
-                <element signature="e#80#81#0" expanded="true" />
-                <element signature="e#107#108#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="173">
+              <caret line="11" column="39" lean-forward="false" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -99,13 +83,13 @@
         <option value="$PROJECT_DIR$/unusual-spending/src/main/java/spending/EmailsUserWrapper.java" />
         <option value="$PROJECT_DIR$/unusual-spending/src/main/java/spending/Payments.java" />
         <option value="$PROJECT_DIR$/unusual-spending/src/main/java/spending/FetchesUserPaymentsByMonthWrapper.java" />
-        <option value="$PROJECT_DIR$/unusual-spending/src/main/java/spending/Category.java" />
-        <option value="$PROJECT_DIR$/unusual-spending/src/main/java/spending/EmailMessage.java" />
         <option value="$PROJECT_DIR$/unusual-spending/src/main/java/spending/TriggersUnusualSpendingEmail.java" />
         <option value="$PROJECT_DIR$/unusual-spending/src/main/test/TriggersUnusualSpendingEmailTest.java" />
-        <option value="$PROJECT_DIR$/unusual-spending/src/main/test/EmailMessageTest.java" />
         <option value="$PROJECT_DIR$/unusual-spending/src/main/test/PaymentTest.java" />
         <option value="$PROJECT_DIR$/unusual-spending/src/main/java/spending/Payment.java" />
+        <option value="$PROJECT_DIR$/unusual-spending/src/main/test/EmailMessageTest.java" />
+        <option value="$PROJECT_DIR$/unusual-spending/src/main/java/spending/Category.java" />
+        <option value="$PROJECT_DIR$/unusual-spending/src/main/java/spending/EmailMessage.java" />
       </list>
     </option>
   </component>
@@ -748,32 +732,11 @@
       <updated>1494862261165</updated>
       <workItem from="1494862262477" duration="2118000" />
       <workItem from="1494945451042" duration="7496000" />
-      <workItem from="1495033329269" duration="4113000" />
+      <workItem from="1495033329269" duration="4808000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_unusual-spending - 2017.05.18 at 11h 39m 34s.xml">
-      <configuration name="All in unusual-spending" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_unusual-spending - 2017.05.18 at 11h 39m 56s.xml">
-      <configuration name="All in unusual-spending" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_unusual-spending - 2017.05.18 at 11h 40m 33s.xml">
-      <configuration name="All in unusual-spending" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_unusual-spending - 2017.05.18 at 11h 40m 47s.xml">
-      <configuration name="All in unusual-spending" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_unusual-spending - 2017.05.18 at 11h 41m 18s.xml">
-      <configuration name="All in unusual-spending" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_unusual-spending - 2017.05.18 at 11h 41m 47s.xml">
-      <configuration name="All in unusual-spending" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_unusual-spending - 2017.05.18 at 11h 42m 19s.xml">
-      <configuration name="All in unusual-spending" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_unusual-spending - 2017.05.18 at 11h 42m 31s.xml">
       <configuration name="All in unusual-spending" configurationId="JUnit" />
     </history-entry>
@@ -783,9 +746,30 @@
     <history-entry file="All_in_unusual-spending - 2017.05.18 at 11h 43m 51s.xml">
       <configuration name="All in unusual-spending" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_unusual-spending - 2017.05.18 at 11h 45m 08s.xml">
+      <configuration name="All in unusual-spending" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_unusual-spending - 2017.05.18 at 11h 50m 41s.xml">
+      <configuration name="All in unusual-spending" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_unusual-spending - 2017.05.18 at 11h 51m 20s.xml">
+      <configuration name="All in unusual-spending" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_unusual-spending - 2017.05.18 at 11h 51m 50s.xml">
+      <configuration name="All in unusual-spending" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_unusual-spending - 2017.05.18 at 11h 54m 08s.xml">
+      <configuration name="All in unusual-spending" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_unusual-spending - 2017.05.18 at 11h 54m 53s.xml">
+      <configuration name="All in unusual-spending" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_unusual-spending - 2017.05.18 at 11h 55m 31s.xml">
+      <configuration name="All in unusual-spending" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13727000" />
+    <option name="totallyTimeSpent" value="14422000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
@@ -958,14 +942,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/unusual-spending/src/main/java/spending/Category.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="35" lean-forward="true" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/unusual-spending/src/main/java/spending/EmailsUserWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -979,8 +955,8 @@
         <state relative-caret-position="200">
           <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
           <folding>
-            <element signature="e#167#168#0" expanded="true" />
-            <element signature="e#194#195#0" expanded="true" />
+            <element signature="e#167#168#0" expanded="false" />
+            <element signature="e#194#195#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1003,10 +979,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/unusual-spending/src/main/test/PaymentTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="61" column="13" lean-forward="true" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unusual-spending/src/main/java/spending/Payment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unusual-spending/src/main/java/spending/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="35" lean-forward="false" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/unusual-spending/src/main/test/EmailMessageTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="303">
-          <caret line="40" column="13" lean-forward="false" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+          <caret line="46" column="33" lean-forward="false" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1015,29 +1017,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/unusual-spending/src/main/java/spending/EmailMessage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="31" lean-forward="false" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-          <folding>
-            <element signature="e#80#81#0" expanded="true" />
-            <element signature="e#107#108#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unusual-spending/src/main/java/spending/Payment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="61" column="24" lean-forward="true" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unusual-spending/src/main/test/PaymentTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="71" column="41" lean-forward="false" selection-start-line="71" selection-start-column="41" selection-end-line="71" selection-end-column="41" />
+        <state relative-caret-position="173">
+          <caret line="11" column="39" lean-forward="false" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
           <folding />
         </state>
       </provider>

@@ -26,6 +26,9 @@ public class TriggersUnusualSpendingEmailTest {
     @Mock
     private Payment payment;
 
+    @Mock
+    private EmailMessage emailMessage;
+
     @Test
     public void canaryTest() {
         assertTrue(true);
@@ -49,10 +52,11 @@ public class TriggersUnusualSpendingEmailTest {
                 thenReturn(previousMonthPayments);
         when(payment.determineCategoriesSpentMoreThisMonth(currentMonthPayments, previousMonthPayments)).
                 thenReturn(categories);
+        when(emailMessage.composeEmail(categories)).thenReturn("email Text");
         //act
         triggersUnusualSpendingEmail.trigger(userId);
 
         //assert
-        verify(emailsUserWrapper).email();
+        verify(emailsUserWrapper).email("email Text");
     }
 }

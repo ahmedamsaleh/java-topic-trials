@@ -1,6 +1,6 @@
 package spending;
 
 public class EmailsUserWrapper {
-    public void email() {
+    public void email(String emailText) {
     }
 }

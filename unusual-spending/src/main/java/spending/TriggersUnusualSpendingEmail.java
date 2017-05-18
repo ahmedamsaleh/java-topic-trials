@@ -8,6 +8,7 @@ public class TriggersUnusualSpendingEmail {
 	FetchesUserPaymentsByMonthWrapper fetchesUserPaymentsByMonthWrapper;
 	EmailsUserWrapper emailsUserWrapper;
 	Payment payment;
+	EmailMessage emailMessage;
 
 	public void trigger(long userId) {
 		Calendar cal = Calendar.getInstance();
@@ -17,7 +18,8 @@ public class TriggersUnusualSpendingEmail {
 				userId, cal.get(Calendar.MONTH) - 1, cal.get(Calendar.YEAR));
 		HashMap<Category, Integer> categories =
 				payment.determineCategoriesSpentMoreThisMonth(currentMonthPayments, previousMonthPayments);
-		emailsUserWrapper.email();
+		String emailText = emailMessage.composeEmail(categories);
+		emailsUserWrapper.email(emailText);
 	}
 
 }

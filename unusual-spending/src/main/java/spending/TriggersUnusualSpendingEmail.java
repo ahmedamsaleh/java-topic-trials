@@ -2,6 +2,7 @@ package spending;
 
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.HashMap;
 
 public class TriggersUnusualSpendingEmail {
 	FetchesUserPaymentsByMonthWrapper fetchesUserPaymentsByMonthWrapper;
@@ -14,7 +15,7 @@ public class TriggersUnusualSpendingEmail {
 				userId, cal.get(Calendar.MONTH), cal.get(Calendar.YEAR));
 		ArrayList<Payment> previousMonthPayments = fetchesUserPaymentsByMonthWrapper.fetch(
 				userId, cal.get(Calendar.MONTH) - 1, cal.get(Calendar.YEAR));
-		ArrayList<Category> categories =
+		HashMap<Category, Integer> categories =
 				payment.determineCategoriesSpentMoreThisMonth(currentMonthPayments, previousMonthPayments);
 		emailsUserWrapper.email();
 	}

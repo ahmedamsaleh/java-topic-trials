@@ -38,8 +38,8 @@ public class Payment {
         this.category = category;
     }
 
-    public ArrayList<Category> determineCategoriesSpentMoreThisMonth(ArrayList<Payment> currentMonthPayments, ArrayList<Payment> previousMonthPayments) {
-        ArrayList<Category> categoriesSpentMore = new ArrayList<Category>();
+    public HashMap<Category, Integer> determineCategoriesSpentMoreThisMonth(ArrayList<Payment> currentMonthPayments, ArrayList<Payment> previousMonthPayments) {
+        HashMap<Category, Integer> categoriesSpentMoreMap = new HashMap();
         HashMap<Category, Integer> currentMonthsCategories = new HashMap();
         HashMap<Category, Integer> previousMonthsCategories = new HashMap();
 
@@ -48,21 +48,23 @@ public class Payment {
 
         for (final Category key : currentMonthsCategories.keySet()) {
             if (previousMonthsCategories.containsKey(key)) {
-                if (previousMonthsCategories.get(key) >= (currentMonthsCategories.get(key) +  currentMonthsCategories.get(key)*.5)) {
-                    categoriesSpentMore.add(key);
+                int value = previousMonthsCategories.get(key).intValue();
+                if (currentMonthsCategories.get(key).intValue() >= (value +  value*.5)) {
+                    categoriesSpentMoreMap.put(key, currentMonthsCategories.get(key).intValue());
                 }
             }
         }
-        return categoriesSpentMore;
+        return categoriesSpentMoreMap;
     }
 
-    private void createCategoryMapForPayments(ArrayList<Payment> monthPayments, HashMap<Category, Integer> currentMonthsCategories) {
+    private void createCategoryMapForPayments(ArrayList<Payment> monthPayments, HashMap<Category, Integer> monthsCategories) {
         if (monthPayments != null) {
             for (Payment monthPayment : monthPayments) {
-                if (!currentMonthsCategories.containsKey(monthPayment.getCategory())) {
-                    currentMonthsCategories.put(monthPayment.getCategory(), monthPayment.getPrice());
+                if (!monthsCategories.containsKey(monthPayment.getCategory())) {
+                    monthsCategories.put(monthPayment.getCategory(), monthPayment.getPrice());
+                }else{
+                    monthsCategories.put(monthPayment.getCategory(), monthPayment.getPrice() + monthsCategories.get(monthPayment.getCategory()));
                 }
-                currentMonthsCategories.put(monthPayment.getCategory(), monthPayment.getPrice() + currentMonthsCategories.get(monthPayment.getCategory()));
             }
         }
     }

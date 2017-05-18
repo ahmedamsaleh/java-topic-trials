@@ -6,6 +6,7 @@ import org.mockito.runners.MockitoJUnitRunner;
 import spending.*;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.verify;
@@ -36,7 +37,7 @@ public class TriggersUnusualSpendingEmailTest {
         long userId = 123;
         ArrayList<Payment> currentMonthPayments = new ArrayList<Payment>();
         ArrayList<Payment> previousMonthPayments = new ArrayList<Payment>();
-        ArrayList<Category> categories = new ArrayList<Category>();
+        HashMap<Category, Integer> categories = new HashMap();
         int currentMonth = 5;
         int previousMonth = 4;
         int year = 2017;

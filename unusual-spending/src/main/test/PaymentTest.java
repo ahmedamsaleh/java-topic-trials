@@ -5,6 +5,7 @@ import spending.Category;
 import spending.Payment;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import static org.junit.Assert.assertEquals;
 
@@ -56,22 +57,21 @@ public class PaymentTest {
         Payment payment6 = new Payment("example payment", Category.ENTERTAINMENT, 50);
         ArrayList<Payment> currentMonthPayments = new ArrayList<Payment>();
         ArrayList<Payment> previousMonthPayments = new ArrayList<Payment>();
-        ArrayList<Category> expectedCategories = new ArrayList<Category>();
+        HashMap<Category, Integer> expectedCategories = new HashMap();
 
         //act
-        currentMonthPayments.add(payment1);
-        currentMonthPayments.add(payment2);
-        currentMonthPayments.add(payment3);
-        previousMonthPayments.add(payment4);
-        previousMonthPayments.add(payment5);
-        previousMonthPayments.add(payment6);
-        expectedCategories.add(Category.RESTAURANT);
+        previousMonthPayments.add(payment1);
+        previousMonthPayments.add(payment2);
+        previousMonthPayments.add(payment3);
+        currentMonthPayments.add(payment4);
+        currentMonthPayments.add(payment5);
+        currentMonthPayments.add(payment6);
+        expectedCategories.put(Category.RESTAURANT, 150);
         Payment payment = new Payment();
-        ArrayList<Category> categorizedList = payment.determineCategoriesSpentMoreThisMonth(
+        HashMap<Category, Integer> categorizedList = payment.determineCategoriesSpentMoreThisMonth(
                 currentMonthPayments, previousMonthPayments);
 
         //assert
-        assertEquals(categorizedList, expectedCategories);
-
+        assertEquals(expectedCategories, categorizedList);
     }
 }
